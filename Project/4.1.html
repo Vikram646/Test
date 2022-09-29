@@ -1,0 +1,131 @@
+<!-- Create a webpage that displays a multiple choice questions
+minimum 25 questions to be added
+
+q1: dsjksjghkjldfsgklsdfjkg
+a:djdj          b:djfgjdsfg
+c:fdsj          d:fdsjfdh -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/5665c697b1.js"></script>
+        <title>
+            Online Mock Test
+        </title>
+        <style>
+           h1,h2,td,th{
+            font-family: 'Edu SA Beginner', cursive;
+           } 
+           h1{
+            background-color: aqua;
+           
+           }
+           h2{
+            background-color: #5E7998;
+           }
+           .buttontable{
+            border: 3px solid black;
+           
+           }
+           label{
+            font-weight: bold;
+            font-size: 26px;
+           }
+           .mytable{
+            background-color: #5E7998;
+            border: 5px solid black;
+           }
+        </style>
+    </head>
+    <body bgcolor="#F6EDD9">
+        <form post="form.txt">
+        <div align="center"><br>
+            <h1>Energy and Environment Management MCQ Questions Mock Test</h1>
+            <label><h2>Enter Details for the Test</h2></label><br>
+            <table class="mytable">
+                <tr>
+                    <td>
+                        <i class="fa fa-address-book" aria-hidden="true"></i> &nbsp;&nbsp;
+                    <label>Name: </label>   
+                    </td>
+                    <td>
+                        <input placeholder="Your name here" type="text" name="user">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;&nbsp;
+                        <label>Email Id :</label>
+                    </td>
+                    <td>
+                        <input placeholder="Your Email here" type="text" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;&nbsp;
+                    <label>Phone No: </label>   
+                    </td>
+                    <td>
+                        <input type="text" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;
+                    <label>Current Branch: </label>   
+                    </td>
+                    <td>
+                        <select name="branch">
+                            <option value="it">IT</option>
+                            <option value="cp" selected>CP</option>
+                            <option value="ec">EC</option>
+                            <option value="ee">EE</option>
+                            <option value="mech">Mech</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-sliders" aria-hidden="true"></i> &nbsp;
+                    <label>Current Year: </label>   
+                    </td>
+                    <td>
+                        <select name="branch">
+                            <option value="1">1 st</option>
+                            <option value="2">2 nd</option>
+                            <option value="3">3 rd</option>
+                            <option value="4">4 th</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <table class="buttontable">
+                            <tr>
+                                <td style="background-color:#DCF9D7;">
+                                    <a href="4.2.html">Submit</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td >
+                        <input style="background-color:#DCF9D7; border: 3px solid black;  border-bottom-left-radius: 10px;
+                        border-top-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        border-top-right-radius: 10px;" type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+            <!-- <a href="4.2.html">
+                <input type="submit" value="Submit"/>|
+            </a>
+            &nbsp;&nbsp;&nbsp; -->
+            </div>
+        </form>
+    </body>
+</html>

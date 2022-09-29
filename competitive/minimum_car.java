@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class minimum_car 
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+    int t = sc.nextInt();
+    for(int i = t;i>=1;i--)
+    {
+        int n = sc.nextInt();
+        System.out.println((int) Math.ceil((double) n/4));
+    }
+    }
+    
+}

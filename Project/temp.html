@@ -1,0 +1,1314 @@
+<!--[if lt IE 9]><script src="https://cdn03.jotfor.ms/js/vendor/flashcanvas.js?3.3.34509" type="text/javascript"></script><![endif]-->
+<script src="https://cdn01.jotfor.ms/js/vendor/jquery-1.8.0.min.js?3.3.34509" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/vendor/jSignature.min.noconflict.js?3.3.34509" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/jotform.signaturepad.js?3.3.34509" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.34509" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.34509" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://js.jotform.com/vendor/postMessage.js?3.3.34509" type="text/javascript"></script>
+<script src="https://js.jotform.com/WidgetsServer.js?v=1657362541134" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = false;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+
+	JotForm.init(function(){
+	/*INIT-START*/
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("10", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("10", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });
+if (window.JotForm && JotForm.accessible) $('input_24').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_17').hint('ex: 23');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_20').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_21').setAttribute('tabindex',0);
+      productID = {"0":"input_23_1000","1":"input_23_1002","2":"input_23_1001"};
+      paymentType = "product";
+      JotForm.setCurrencyFormat('USD',true, 'point');
+      JotForm.totalCounter({"input_23_1000":{"price":"200"},"input_23_1002":{"price":"350"},"input_23_1001":{"price":"500"}});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
+      JotForm.handleProductLightbox();
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("27", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("27", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });
+ JotForm.formatDate({date:(new Date()), dateField:$("id_"+27)});
+      JotForm.alterTexts(undefined);
+      JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"carRace","qid":"1","text":"Car Race Registration Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"name":"input4","qid":"4","text":"Location: 1379 Horseshoe Lane, Philadelphia, PA, 19108Race Dates: October 1, 2019 \u002F October 4, 2019 \u002F October 7, 2019Time: 8:00AM - 5:00PM","type":"control_text"},{"name":"input5","qid":"5","text":"Please fill-up the form below to register to the event:","type":"control_text"},{"name":"driverInformation","qid":"6","text":"Driver Information","type":"control_head"},{"name":"driversName","qid":"7","text":"Driver's Name","type":"control_fullname"},{"name":"phoneNumber","qid":"8","text":"Phone Number","type":"control_phone"},{"name":"email","qid":"9","subLabel":"example@example.com","text":"Email","type":"control_email"},{"name":"dateOf","qid":"10","text":"Date of Birth","type":"control_datetime"},{"name":"address","qid":"11","text":"Address","type":"control_address"},{"name":"emergencyContact","qid":"12","text":"Emergency Contact Person","type":"control_fullname"},{"name":"emergencyPerson","qid":"13","text":"Emergency Person Phone Number","type":"control_phone"},{"name":"carDetails","qid":"14","text":"Car Details","type":"control_head"},{"name":"make","qid":"15","text":"Make","type":"control_textbox"},{"name":"model","qid":"16","text":"Model","type":"control_textbox"},{"name":"year","qid":"17","text":"Year","type":"control_number"},null,{"name":"carColor","qid":"19","text":"Car Color","type":"control_widget"},{"name":"modifications","qid":"20","text":"Modifications","type":"control_textarea"},{"name":"licensePlate","qid":"21","text":"License Plate Number","type":"control_textbox"},{"name":"registrationPayment","qid":"22","text":"Registration Payment","type":"control_head"},{"name":"registrationFee","qid":"23","text":"Registration Fee","type":"control_payment"},{"name":"relationshipTo","qid":"24","text":"Relationship to Emergency Contact Person","type":"control_textbox"},{"name":"driversSignature","qid":"25","text":"Driver's Signature","type":"control_signature"},{"name":"releaseamp","qid":"26","text":"Release &amp; Agreement","type":"control_head"},{"name":"dateSigned","qid":"27","text":"Date Signed","type":"control_datetime"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"carRace","qid":"1","text":"Car Race Registration Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"name":"input4","qid":"4","text":"Location: 1379 Horseshoe Lane, Philadelphia, PA, 19108Race Dates: October 1, 2019 \u002F October 4, 2019 \u002F October 7, 2019Time: 8:00AM - 5:00PM","type":"control_text"},{"name":"input5","qid":"5","text":"Please fill-up the form below to register to the event:","type":"control_text"},{"name":"driverInformation","qid":"6","text":"Driver Information","type":"control_head"},{"name":"driversName","qid":"7","text":"Driver's Name","type":"control_fullname"},{"name":"phoneNumber","qid":"8","text":"Phone Number","type":"control_phone"},{"name":"email","qid":"9","subLabel":"example@example.com","text":"Email","type":"control_email"},{"name":"dateOf","qid":"10","text":"Date of Birth","type":"control_datetime"},{"name":"address","qid":"11","text":"Address","type":"control_address"},{"name":"emergencyContact","qid":"12","text":"Emergency Contact Person","type":"control_fullname"},{"name":"emergencyPerson","qid":"13","text":"Emergency Person Phone Number","type":"control_phone"},{"name":"carDetails","qid":"14","text":"Car Details","type":"control_head"},{"name":"make","qid":"15","text":"Make","type":"control_textbox"},{"name":"model","qid":"16","text":"Model","type":"control_textbox"},{"name":"year","qid":"17","text":"Year","type":"control_number"},null,{"name":"carColor","qid":"19","text":"Car Color","type":"control_widget"},{"name":"modifications","qid":"20","text":"Modifications","type":"control_textarea"},{"name":"licensePlate","qid":"21","text":"License Plate Number","type":"control_textbox"},{"name":"registrationPayment","qid":"22","text":"Registration Payment","type":"control_head"},{"name":"registrationFee","qid":"23","text":"Registration Fee","type":"control_payment"},{"name":"relationshipTo","qid":"24","text":"Relationship to Emergency Contact Person","type":"control_textbox"},{"name":"driversSignature","qid":"25","text":"Driver's Signature","type":"control_signature"},{"name":"releaseamp","qid":"26","text":"Release &amp; Agreement","type":"control_head"},{"name":"dateSigned","qid":"27","text":"Date Signed","type":"control_datetime"}]);}, 20); 
+</script>
+<link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.34509" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/nova.css?3.3.34509" />
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.34509" />
+<style type="text/css">
+
+
+    .form-label-left{
+        width:150px;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px;
+    }
+    .form-all{
+        width:690px;
+        color:rgb(255, 255, 255) !important;
+        font-family:'Open Sans';
+        font-size:14px;
+    }
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+@import "https://fonts.googleapis.com/css?family=Open Sans:light,lightitalic,normal,italic,bold,bolditalic";
+.form-all:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-all {
+  font-family: "Open Sans", sans-serif;
+}
+.form-all {
+  width: 690px;
+}
+.form-label-left,
+.form-label-right {
+  width: 150px;
+}
+.form-label {
+  white-space: normal;
+}
+.form-label.form-label-auto {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  width: 150px;
+}
+.form-label-left {
+  display: inline-block;
+  white-space: normal;
+  float: left;
+  text-align: left;
+}
+.form-label-right {
+  display: inline-block;
+  white-space: normal;
+  float: left;
+  text-align: right;
+}
+.form-label-top {
+  white-space: normal;
+  display: block;
+  float: none;
+  text-align: left;
+}
+.form-radio-item label:before {
+  top: 0;
+}
+.form-all {
+  font-size: 14px;
+}
+.form-label {
+  font-weight: bold;
+}
+.form-checkbox-item label,
+.form-radio-item label {
+  font-weight: normal;
+}
+.supernova {
+  background-color: rgba(0, 0, 0, 0.81);
+  background-color: #f5f5f5;
+}
+.supernova body {
+  background-color: transparent;
+}
+/*
+@width30: (unit(@formWidth, px) + 60px);
+@width60: (unit(@formWidth, px)+ 120px);
+@width90: (unit(@formWidth, px)+ 180px);
+*/
+/* | */
+@media screen and (min-width: 480px) {
+  .supernova .form-all {
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  }
+}
+/* | */
+/* | */
+@media screen and (max-width: 480px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 480px) and (max-width: 689px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 768px) {
+  .jotform-form {
+    padding: 60px 0;
+  }
+}
+/* | */
+/* | */
+@media screen and (max-width: 689px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+.supernova .form-all,
+.form-all {
+  background-color: rgba(0, 0, 0, 0.81);
+  border: 1px solid transparent;
+}
+.form-header-group {
+  border-color: rgba(0, 0, 0, 0.81);
+}
+.form-matrix-table tr {
+  border-color: rgba(0, 0, 0, 0.81);
+}
+.form-matrix-table tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.81);
+}
+.form-all {
+  color: #ffffff;
+}
+.form-header-group .form-header {
+  color: #ffffff;
+}
+.form-header-group .form-subHeader {
+  color: #ffffff;
+}
+.form-sub-label {
+  color: #ffffff;
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html {
+  color: #ffffff;
+}
+.form-checkbox-item label,
+.form-radio-item label {
+  color: #ffffff;
+}
+.form-line.form-line-active {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #008aff;
+}
+/* omer */
+.form-radio-item,
+.form-checkbox-item {
+  padding-bottom: 0px !important;
+}
+.form-radio-item:last-child,
+.form-checkbox-item:last-child {
+  padding-bottom: 0;
+}
+/* omer */
+.form-single-column .form-checkbox-item,
+.form-single-column .form-radio-item {
+  width: 100%;
+}
+.form-checkbox-item .editor-container div,
+.form-radio-item .editor-container div {
+  position: relative;
+}
+.form-checkbox-item .editor-container div:before,
+.form-radio-item .editor-container div:before {
+  display: inline-block;
+  vertical-align: middle;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+.supernova {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: auto;
+  background-size: cover;
+}
+.supernova {
+  background-image: none;
+  background-image: url("https://www.jotform.com/uploads/VanessaDavid/form_files/car-wp-unplash.5d6c3f6f09c059.01352051.png");
+}
+#stage {
+  background-image: none;
+  background-image: url("https://www.jotform.com/uploads/VanessaDavid/form_files/car-wp-unplash.5d6c3f6f09c059.01352051.png");
+}
+/* | */
+.form-all {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: repeat;
+}
+.form-header-group {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+}
+.form-line {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.form-line {
+  padding: 8px 36px;
+}
+.form-all .form-textbox,
+.form-all .form-radio-other-input,
+.form-all .form-checkbox-other-input,
+.form-all .form-captcha input,
+.form-all .form-spinner input,
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next,
+.form-all .qq-upload-button,
+.form-all .form-error-message {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.form-all .form-sub-label {
+  margin-left: 3px;
+}
+.form-all .form-textarea {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.form-dropdown {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: button;
+  appearance: none;
+  margin: 0;
+}
+.form-all {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.form-section:first-child {
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+.form-section:last-child {
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+}
+.form-all .qq-upload-button,
+.form-all .form-submit-button,
+.form-all .form-submit-reset,
+.form-all .form-submit-print {
+  font-size: 1em;
+  padding: 9px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  font-size: 1em;
+  padding: 9px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+/*
+& when ( @buttonFontType = google ) {
+	@import (css) "@{buttonFontLink}";
+}
+*/
+h2.form-header {
+  line-height: 1.618em;
+  font-size: 1.714em;
+}
+h2 ~ .form-subHeader {
+  line-height: 1.5em;
+  font-size: 1.071em;
+}
+.form-header-group {
+  text-align: left;
+}
+/*.form-dropdown,
+.form-radio-item,
+.form-checkbox-item,
+.form-radio-other-input,
+.form-checkbox-other-input,*/
+.form-captcha input,
+.form-spinner input,
+.form-error-message {
+  padding: 4px 3px 2px 3px;
+}
+.form-header-group {
+  font-family: "Arial #000000", sans-serif;
+}
+.form-section {
+  padding: 0px 0px 0px 0px;
+}
+.form-header-group {
+  margin: 12px 36px 12px 36px;
+}
+.form-header-group {
+  padding: 24px 0px 24px 0px;
+}
+.form-header-group .form-header,
+.form-header-group .form-subHeader {
+  color: #ffffff;
+}
+.form-header-group {
+  background-color: #fe5832;
+}
+.form-textbox,
+.form-textarea {
+  border-width: 1px;
+  border-color: #000000;
+  padding: 4px 3px 2px 3px;
+}
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: #fdfeff;
+}
+.form-textbox {
+  height: 21px;
+}
+.form-dropdown {
+  -webkit-appearance: menulist-button;
+  height: 25px;
+}
+[data-type="control_dropdown"] .form-input,
+[data-type="control_dropdown"] .form-input-wide {
+  width: 150px;
+}
+.form-header-group {
+  border-bottom: none;
+}
+.form-label {
+  font-family: "Open Sans", sans-serif;
+}
+li[data-type="control_image"] div {
+  text-align: left;
+}
+li[data-type="control_image"] img {
+  border: none;
+  border-width: 0px !important;
+  border-style: solid !important;
+  border-color: false !important;
+}
+.form-line-column {
+  width: auto;
+}
+.form-line-error {
+  overflow: hidden;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #fff4f4;
+}
+.form-line-error .form-error-message {
+  background-color: #ff3200;
+  clear: both;
+  float: none;
+}
+.form-line-error .form-error-message .form-error-arrow {
+  border-bottom-color: #ff3200;
+}
+.form-line-error input:not(#coupon-input),
+.form-line-error textarea,
+.form-line-error .form-validation-error {
+  border: 1px solid #ff3200;
+  -webkit-box-shadow: 0 0 3px #ff3200;
+  -moz-box-shadow: 0 0 3px #ff3200;
+  box-shadow: 0 0 3px #ff3200;
+}
+.ie-8 .form-all {
+  margin-top: auto;
+  margin-top: initial;
+}
+.ie-8 .form-all:before {
+  display: none;
+}
+[data-type="control_clear"] {
+  display: none;
+}
+/* | */
+@media screen and (max-width: 480px), screen and (max-device-width: 767px) and (orientation: portrait), screen and (max-device-width: 415px) and (orientation: landscape) {
+  .testOne {
+    letter-spacing: 0;
+  }
+  .form-all {
+    border: 0;
+    max-width: initial;
+  }
+  .form-sub-label-container {
+    width: 100%;
+    margin: 0;
+    margin-right: 0;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  span.form-sub-label-container + span.form-sub-label-container {
+    margin-right: 0;
+  }
+  .form-sub-label {
+    white-space: normal;
+  }
+  .form-address-table td,
+  .form-address-table th {
+    padding: 0 1px 10px;
+  }
+  .form-submit-button,
+  .form-submit-print,
+  .form-submit-reset {
+    width: 100%;
+    margin-left: 0!important;
+  }
+  div[id*=at_] {
+    font-size: 14px;
+    font-weight: 700;
+    height: 8px;
+    margin-top: 6px;
+  }
+  .showAutoCalendar {
+    width: 20px;
+  }
+  img.form-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-matrix-row-headers {
+    width: 100%;
+    word-break: break-all;
+    min-width: 40px;
+  }
+  .form-collapse-table,
+  .form-header-group {
+    margin: 0;
+  }
+  .form-collapse-table {
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+  }
+  .form-collapse-hidden {
+    display: none !important;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form-label {
+    width: 100% !important;
+  }
+  .form-label-left,
+  .form-label-right {
+    display: block;
+    float: none;
+    text-align: left;
+    width: auto!important;
+  }
+  .form-line,
+  .form-line.form-line-column {
+    padding: 2% 5%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: initial !important;
+  }
+  .form-radio-other-input,
+  .form-checkbox-other-input {
+    max-width: 55% !important;
+  }
+  .form-dropdown,
+  .form-textarea,
+  .form-textbox {
+    width: 100%!important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .form-input,
+  .form-input-wide,
+  .form-textarea,
+  .form-textbox,
+  .form-dropdown {
+    max-width: initial!important;
+  }
+  .form-checkbox-item:not(#foo),
+  .form-radio-item:not(#foo) {
+    width: 100%;
+  }
+  .form-address-city,
+  .form-address-line,
+  .form-address-postal,
+  .form-address-state,
+  .form-address-table,
+  .form-address-table .form-sub-label-container,
+  .form-address-table select,
+  .form-input {
+    width: 100%;
+  }
+  div.form-header-group {
+    padding: 24px 0px !important;
+    margin: 0 12px 2% !important;
+    margin-left: 5%!important;
+    margin-right: 5%!important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  div.form-header-group.hasImage img {
+    max-width: 100%;
+  }
+  [data-type="control_button"] {
+    margin-bottom: 0 !important;
+  }
+  [data-type=control_fullname] .form-sub-label-container {
+    width: 48%;
+  }
+  [data-type=control_fullname] .form-sub-label-container:first-child {
+    margin-right: 4%;
+  }
+  [data-type=control_phone] .form-sub-label-container {
+    width: 65%;
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+  }
+  [data-type=control_phone] .form-sub-label-container:first-child {
+    width: 31%;
+    margin-right: 4%;
+  }
+  [data-type=control_datetime] .allowTime-container {
+    width: 100%;
+  }
+  [data-type=control_datetime] .form-sub-label-container:first-child {
+    width: 10%!important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  [data-type=control_datetime] .form-sub-label-container + .form-sub-label-container {
+    width: 24%!important;
+    margin-left: 6%;
+    margin-right: 0;
+  }
+  [data-type=control_datetime] span + span + span > span:first-child {
+    display: block;
+    width: 100% !important;
+  }
+  [data-type=control_birthdate] .form-sub-label-container,
+  [data-type=control_time] .form-sub-label-container {
+    width: 27.3%!important;
+    margin-right: 6% !important;
+  }
+  [data-type=control_time] .form-sub-label-container:last-child {
+    width: 33.3%!important;
+    margin-right: 0 !important;
+  }
+  .form-pagebreak-back-container,
+  .form-pagebreak-next-container {
+    min-height: 1px;
+    width: 50% !important;
+  }
+  .form-pagebreak-back,
+  .form-pagebreak-next,
+  .form-product-item.hover-product-item {
+    width: 100%;
+  }
+  .form-pagebreak-back-container {
+    padding: 0;
+    text-align: right;
+  }
+  .form-pagebreak-next-container {
+    padding: 0;
+    text-align: left;
+  }
+  .form-pagebreak {
+    margin: 0 auto;
+  }
+  .form-buttons-wrapper {
+    margin: 0!important;
+    margin-left: 0!important;
+  }
+  .form-buttons-wrapper button {
+    width: 100%;
+  }
+  .form-buttons-wrapper .form-submit-print {
+    margin: 0 !important;
+  }
+  table {
+    width: 100%!important;
+    max-width: initial!important;
+  }
+  table td + td {
+    padding-left: 3%;
+  }
+  .form-checkbox-item,
+  .form-radio-item {
+    white-space: normal!important;
+  }
+  .form-checkbox-item input,
+  .form-radio-item input {
+    width: auto;
+  }
+  .form-collapse-table {
+    margin: 0 5%;
+    display: block;
+    zoom: 1;
+    width: auto;
+  }
+  .form-collapse-table:before,
+  .form-collapse-table:after {
+    display: table;
+    content: '';
+    line-height: 0;
+  }
+  .form-collapse-table:after {
+    clear: both;
+  }
+  .fb-like-box {
+    width: 98% !important;
+  }
+  .form-error-message {
+    clear: both;
+    bottom: -10px;
+  }
+  .date-separate,
+  .phone-separate {
+    display: none;
+  }
+  .custom-field-frame,
+  .direct-embed-widgets,
+  .signature-pad-wrapper {
+    width: 100% !important;
+  }
+}
+/* | */
+
+/*__INSPECT_SEPERATOR__*/
+.form-all {
+    margin-left : 45%;
+}
+
+.form-header-group {
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left : 20px;
+    margin-top : 30px;
+}
+
+
+    /* Injected CSS Code */
+</style>
+
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/buttons/form-submit-button-simple_red.css?3.3.34509"/>
+<form class="jotform-form" action="https://submit.jotform.com/submit/221893247841462/" method="post" name="form_221893247841462" id="221893247841462" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="221893247841462" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httac htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Car Race Registration Form
+            </h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_4">
+        <div id="cid_4" class="form-input-wide">
+          <div id="text_4" class="form-html" data-component="text">
+            <strong>Location:</strong>
+            1379 Horseshoe Lane, Philadelphia, PA, 19108
+            <strong>Race Dates:</strong>
+            October 1, 2019 / October 4, 2019 / October 7, 2019
+            <strong>Time:</strong>
+            8:00AM - 5:00PM
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_5">
+        <div id="cid_5" class="form-input-wide">
+          <div id="text_5" class="form-html" data-component="text">
+            Please fill-up the form below to register to the event:
+          </div>
+        </div>
+      </li>
+      <li id="cid_6" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_6" class="form-header" data-component="header">
+              Driver Information
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_7">
+        <label class="form-label form-label-left form-label-auto" id="label_7" for="first_7"> Driver's Name </label>
+        <div id="cid_7" class="form-input">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_7" name="q7_driversName[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_7 given-name" size="10" value="" data-component="first" aria-labelledby="label_7 sublabel_7_first" />
+              <label class="form-sub-label" for="first_7" id="sublabel_7_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_7" name="q7_driversName[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_7 family-name" size="15" value="" data-component="last" aria-labelledby="label_7 sublabel_7_last" />
+              <label class="form-sub-label" for="last_7" id="sublabel_7_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_datetime" id="id_10">
+        <label class="form-label form-label-left form-label-auto" id="label_10" for="lite_mode_10"> Date of Birth </label>
+        <div id="cid_10" class="form-input">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_10" name="q10_dateOf[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_10 off" aria-labelledby="label_10 sublabel_10_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_10" id="sublabel_10_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="day_10" name="q10_dateOf[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_10 off" aria-labelledby="label_10 sublabel_10_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_10" id="sublabel_10_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_10" name="q10_dateOf[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_10 off" aria-labelledby="label_10 sublabel_10_year" />
+                <label class="form-sub-label" for="year_10" id="sublabel_10_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_10" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="section-input_10 off" aria-labelledby="label_10 sublabel_10_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_10_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_10" id="sublabel_10_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_8">
+        <label class="form-label form-label-left form-label-auto" id="label_8" for="input_8_area"> Phone Number </label>
+        <div id="cid_8" class="form-input">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
+              <input type="tel" id="input_8_area" name="q8_phoneNumber[area]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_8 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_8 sublabel_8_area" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_8_area" id="sublabel_8_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
+              <input type="tel" id="input_8_phone" name="q8_phoneNumber[phone]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_8 tel-local" value="" data-component="phone" aria-labelledby="label_8 sublabel_8_phone" />
+              <label class="form-sub-label" for="input_8_phone" id="sublabel_8_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_9">
+        <label class="form-label form-label-left form-label-auto" id="label_9" for="input_9"> Email </label>
+        <div id="cid_9" class="form-input">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_9" name="q9_email" class="form-textbox validate[Email]" data-defaultvalue="" size="30" value="" data-component="email" aria-labelledby="label_9 sublabel_input_9" />
+            <label class="form-sub-label" for="input_9" id="sublabel_input_9" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_address" id="id_11">
+        <label class="form-label form-label-left form-label-auto" id="label_11" for="input_11_addr_line1"> Address </label>
+        <div id="cid_11" class="form-input">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_11_addr_line1" name="q11_address[addr_line1]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_11 address-line1" value="" data-component="address_line_1" aria-labelledby="label_11 sublabel_11_addr_line1" />
+                  <label class="form-sub-label" for="input_11_addr_line1" id="sublabel_11_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_11_addr_line2" name="q11_address[addr_line2]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_11 address-line2" value="" data-component="address_line_2" aria-labelledby="label_11 sublabel_11_addr_line2" />
+                  <label class="form-sub-label" for="input_11_addr_line2" id="sublabel_11_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_11_city" name="q11_address[city]" class="form-textbox form-address-city" data-defaultvalue="" autoComplete="section-input_11 address-level2" value="" data-component="city" aria-labelledby="label_11 sublabel_11_city" />
+                  <label class="form-sub-label" for="input_11_city" id="sublabel_11_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_11_state" name="q11_address[state]" class="form-textbox form-address-state" data-defaultvalue="" autoComplete="section-input_11 address-level1" value="" data-component="state" aria-labelledby="label_11 sublabel_11_state" />
+                  <label class="form-sub-label" for="input_11_state" id="sublabel_11_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_11_postal" name="q11_address[postal]" class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_11 postal-code" value="" data-component="zip" aria-labelledby="label_11 sublabel_11_postal" />
+                  <label class="form-sub-label" for="input_11_postal" id="sublabel_11_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_12">
+        <label class="form-label form-label-left form-label-auto" id="label_12" for="first_12"> Emergency Contact Person </label>
+        <div id="cid_12" class="form-input">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_12" name="q12_emergencyContact[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_12 given-name" size="10" value="" data-component="first" aria-labelledby="label_12 sublabel_12_first" />
+              <label class="form-sub-label" for="first_12" id="sublabel_12_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_12" name="q12_emergencyContact[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_12 family-name" size="15" value="" data-component="last" aria-labelledby="label_12 sublabel_12_last" />
+              <label class="form-sub-label" for="last_12" id="sublabel_12_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_13">
+        <label class="form-label form-label-left form-label-auto" id="label_13" for="input_13_area"> Emergency Person Phone Number </label>
+        <div id="cid_13" class="form-input">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
+              <input type="tel" id="input_13_area" name="q13_emergencyPerson[area]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_13 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_13 sublabel_13_area" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_13_area" id="sublabel_13_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
+              <input type="tel" id="input_13_phone" name="q13_emergencyPerson[phone]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_13 tel-local" value="" data-component="phone" aria-labelledby="label_13 sublabel_13_phone" />
+              <label class="form-sub-label" for="input_13_phone" id="sublabel_13_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_24">
+        <label class="form-label form-label-left form-label-auto" id="label_24" for="input_24"> Relationship to Emergency Contact Person </label>
+        <div id="cid_24" class="form-input">
+          <input type="text" id="input_24" name="q24_relationshipTo" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_24" />
+        </div>
+      </li>
+      <li id="cid_14" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_14" class="form-header" data-component="header">
+              Car Details
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_15">
+        <label class="form-label form-label-left form-label-auto" id="label_15" for="input_15"> Make </label>
+        <div id="cid_15" class="form-input">
+          <input type="text" id="input_15" name="q15_make" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_15" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_16">
+        <label class="form-label form-label-left form-label-auto" id="label_16" for="input_16"> Model </label>
+        <div id="cid_16" class="form-input">
+          <input type="text" id="input_16" name="q16_model" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_16" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_number" id="id_17">
+        <label class="form-label form-label-left form-label-auto" id="label_17" for="input_17"> Year </label>
+        <div id="cid_17" class="form-input">
+          <input type="number" id="input_17" name="q17_year" data-type="input-number" class=" form-number-input form-textbox" data-defaultvalue="" style="width:180px" size="20" value="" placeholder="ex: 23" data-component="number" aria-labelledby="label_17" step="any" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_widget" id="id_19">
+        <label class="form-label form-label-left form-label-auto" id="label_19" for="input_19"> Car Color </label>
+        <div id="cid_19" class="form-input">
+          <div data-widget-name="Color Picker" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field">
+            <iframe data-client-id="528cc783333a356b1f000004" title="Color Picker" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_19" src="" style="max-width:400px;border:none;width:100%;height:100px" data-width="400" data-height="100">
+            </iframe>
+            <div class="widget-inputs-wrapper">
+              <input type="hidden" id="input_19" class="form-hidden form-widget  " name="q19_carColor" value="" />
+              <input type="hidden" id="widget_settings_19" class="form-hidden form-widget-settings" value="%5B%5D" data-version="2" />
+            </div>
+            <script type="text/javascript">
+            setTimeout(function()
+{
+  var _cFieldFrame = document.getElementById("customFieldFrame_19");
+  if (_cFieldFrame)
+  {
+    _cFieldFrame.onload = function()
+    {
+      if (typeof widgetFrameLoaded !== 'undefined')
+      {
+        widgetFrameLoaded(19, {
+          "formID": 221893247841462
+        })
+      }
+    };
+    _cFieldFrame.src = "//widgets.jotform.io/colorpicker/?qid=19&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+    _cFieldFrame.addClassName("custom-field-frame-rendered");
+  }
+}, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_20">
+        <label class="form-label form-label-left form-label-auto" id="label_20" for="input_20"> Modifications </label>
+        <div id="cid_20" class="form-input">
+          <textarea id="input_20" class="form-textarea" name="q20_modifications" cols="40" rows="6" data-component="textarea" aria-labelledby="label_20"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_21">
+        <label class="form-label form-label-left form-label-auto" id="label_21" for="input_21"> License Plate Number </label>
+        <div id="cid_21" class="form-input">
+          <input type="text" id="input_21" name="q21_licensePlate" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_21" />
+        </div>
+      </li>
+      <li id="cid_22" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_22" class="form-header" data-component="header">
+              Registration Payment
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_payment" id="id_23" data-payment="true">
+        <label class="form-label form-label-left form-label-auto" id="label_23" for="input_23"> Registration Fee </label>
+        <div id="cid_23" class="form-input">
+          <div data-wrapper-react="true">
+            <div data-wrapper-react="true" class="product-container-wrapper">
+              <div class="filter-container">
+              </div>
+              <input type="hidden" name="simple_fpc" data-payment_type="payment" data-component="payment1" value="23" />
+              <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+              <div id="image-overlay" class="overlay-content" style="display:none">
+                <img id="current-image" />
+                <span class="lb-prev-button">
+                  prev
+                </span>
+                <span class="lb-next-button">
+                  next
+                </span>
+                <span class="lb-close-button">
+                  ( X )
+                </span>
+                <span class="image-overlay-product-container">
+                  <ul class="form-overlay-item" pid="1000" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" pid="1002" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" pid="1001" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                </span>
+              </div>
+              <div data-wrapper-react="true">
+                <span class="form-product-item hover-product-item " categories="non-categorized" pid="1000">
+                  <div data-wrapper-react="true" class="form-product-item-detail">
+                    <input type="checkbox" class="form-checkbox  form-product-input" id="input_23_1000" name="q23_registrationFee[][id]" value="1000" />
+                    <label for="input_23_1000" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <span class="form-product-name" id="product-name-input_23_1000">
+                          1 Day Participation
+                        </span>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_23_1000_price">
+                                200.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </span>
+                <br/>
+                <span class="form-product-item hover-product-item " categories="non-categorized" pid="1002">
+                  <div data-wrapper-react="true" class="form-product-item-detail">
+                    <input type="checkbox" class="form-checkbox  form-product-input" id="input_23_1002" name="q23_registrationFee[][id]" value="1002" />
+                    <label for="input_23_1002" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <span class="form-product-name" id="product-name-input_23_1002">
+                          2 Days Participation
+                        </span>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_23_1002_price">
+                                350.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </span>
+                <br/>
+                <span class="form-product-item hover-product-item " categories="non-categorized" pid="1001">
+                  <div data-wrapper-react="true" class="form-product-item-detail">
+                    <input type="checkbox" class="form-checkbox  form-product-input" id="input_23_1001" name="q23_registrationFee[][id]" value="1001" />
+                    <label for="input_23_1001" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <span class="form-product-name" id="product-name-input_23_1001">
+                          3 Days Participation
+                        </span>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_23_1001_price">
+                                500.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </span>
+                <br/>
+                <span class="form-payment-total">
+                  <b>
+                    <span id="total-text">
+                      Total
+                    </span>
+                     
+                    <span class="form-payment-price">
+                      <span data-wrapper-react="true">
+                        $
+                        <span id="payment_total">
+                          0.00
+                        </span>
+                      </span>
+                    </span>
+                  </b>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="cid_26" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_26" class="form-header" data-component="header">
+              Release &amp; Agreement
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_signature" id="id_25">
+        <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25"> Driver's Signature </label>
+        <div id="cid_25" class="form-input">
+          <div data-wrapper-react="true">
+            <div id="signature_pad_25" class="signature-pad-wrapper" style="width:402px;height:202px">
+              <div data-wrapper-react="true">
+                <!--[if IE 7]>
+                  <script type="text/javascript" src="/js/vendor/json2.js"></script>
+                <![endif]-->
+              </div>
+              <div class="signature-line signature-wrapper signature-placeholder" data-component="signature" style="width:402px;height:202px">
+                <div id="sig_pad_25" data-width="400" data-height="200" data-id="25" data-required="false" class="pad " aria-labelledby="label_25">
+                </div>
+                <input type="hidden" name="q25_driversSignature" class="output4" id="input_25" />
+              </div>
+              <span class="clear-pad-btn clear-pad" role="button" tabindex="0">
+                Clear
+              </span>
+            </div>
+            <div data-wrapper-react="true">
+              <script type="text/javascript">
+              window.signatureForm = true
+              </script>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_datetime" id="id_27">
+        <label class="form-label form-label-left form-label-auto" id="label_27" for="lite_mode_27"> Date Signed </label>
+        <div id="cid_27" class="form-input">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_27" name="q27_dateSigned[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="07" autoComplete="section-input_27 off" aria-labelledby="label_27 sublabel_27_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_27" id="sublabel_27_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="currentDate form-textbox validate[limitDate]" id="day_27" name="q27_dateSigned[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="09" autoComplete="section-input_27 off" aria-labelledby="label_27 sublabel_27_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_27" id="sublabel_27_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_27" name="q27_dateSigned[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2022" autoComplete="section-input_27 off" aria-labelledby="label_27 sublabel_27_year" />
+                <label class="form-sub-label" for="year_27" id="sublabel_27_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_27" size="12" data-maxlength="12" maxLength="12" data-age="" value="07-09-2022" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="section-input_27 off" aria-labelledby="label_27 sublabel_27_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_27_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_27" id="sublabel_27_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+            <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_red submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by Jotform";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="221893247841462" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='221893247841462'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "221893247841462-221893247841462";
+}
+  </script>
+  <div class="formFooter-heightMask">
+  </div>
+  <div class="formFooter f6 branding21">
+    <div class="formFooter-wrapper formFooter-leftSide">
+      <a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=221893247841462&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg" alt="Jotform Logo" style="height: 44px;"></a>
+    </div>
+    <div class="formFooter-wrapper formFooter-rightSide">
+      <span class="formFooter-text">
+        Now create your own Jotform - It's free!
+      </span>
+      <a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=221893247841462&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own Jotform</a>
+    </div>
+  </div>
+</form>

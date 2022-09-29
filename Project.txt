@@ -1,0 +1,8 @@
+1. Create a web page that act as a resume builder (With proper layout and beautiful heading)
+2. Create a web page that displays multiple choice question minimum 25 questions 
+(Format
+Q1.
+      OPTION 1 			OPTION 2
+      OPTION 3			OPTION 4
+)
+Save and convert to pdf

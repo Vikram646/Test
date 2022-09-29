@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/16a9241ee5.js"></script>
+    <style>
+        
+        #fontstye {
+            font-style: italic;
+            font-weight: bold;
+            background-color: #5E7998;
+            font-family: 'Edu SA Beginner', cursive;
+            font-size: 7ch;
+            border: 10px solid black;
+           
+        }
+        #heading
+        {
+            background-color: #5E7998;
+            border: 2px solid black;
+           
+            font-weight: bold;
+            font-size: 25px;
+            padding-left:5%;
+            
+        }
+        #mytable{
+            margin-left: 10%;
+            background-color: #DCF9D7;
+            /* padding-left: 2ch; */
+        }
+        .table1{
+            /* padding-left: 20px; */
+            border: 8px solid black;
+            border-style:solid;
+            /* background-color: white; */
+            color: black;
+            background-color: #D8F3FF;
+          
+            
+        }
+        td,th {
+            font-family: 'Edu SA Beginner', cursive;
+            font-size: 30px;
+        }
+        
+       
+        </style>
+    
+</head>
+
+<body bgcolor="#F6EDD9">
+   
+    
+    <table width="100%" height="150px" >
+        <tr>
+            <td id="fontstye" align="center">
+                Build your Resume
+            </td>
+        </tr>
+    </table>
+    <h2>Welcome Friend, Create your Resume down here...</h2>
+    <form>
+    <table align="center" class="table1" border="1" width="80%">
+        <tr>
+            <td width="30%" align="center">Attach your photo : <br>
+                <br><i class="fa fa-picture-o" aria-hidden="true"></i>
+                &nbsp;&nbsp;&nbsp; <input type="file" name="" id="">
+            </td>
+            <td> Tell about yourself :<br> <br>
+            <textarea name="" id="" cols="100" rows="10"></textarea></td>
+        </tr>
+    </table>
+    <hr>    
+        <table width="20%" height="50px" id="mytable"> 
+            <tr >
+                <td id="heading"> 
+                    Basic Information :
+    
+                </td>
+            </tr>
+    
+        </table > <br>
+     
+
+    <!-- <table class="table1" align="center"> -->
+        <!-- <tr><td> -->
+    
+    <table align="center" class="table1" width="80%" >
+                <tr>
+                    <td>
+                        <label for="full_name"> Full Name :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="full_name" placeholder="first middle last" size="30" > 
+                        </td>                  
+                    <td>
+                        <label for="e-mail"> E-mail Address :</label>
+                    </td>      
+                       <td> <input type="email" id="e-mail" placeholder="your email here" size="30">
+                    </td>
+                </tr>
+            <tr>
+        <td>
+                <label for="phone_no">Phone Number :</label>
+                </td>
+            <td>
+                <input type="number" id="phone_no" placeholder="your phone number here"size="30"> 
+            </td>
+            <td>
+               <label for="website"> Website :</label></td>
+               <td>
+               <input type="text" id="website" size="30" placeholder="your any website here">
+               
+            </td>
+        </tr>
+            <tr>
+        <td>
+                <label for="dob">Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="date" id="dob" size="30"> <br>
+            </td>
+            <td>
+               <label for="profile"> Linkedin Profile:</label></td>
+               <td>
+               <input type="text" id="profile" size="30" placeholder="your linkedin profile here">
+               
+            </td>
+        </tr>
+                 <tr>
+                    <td>
+                        <label for="city"> Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender"> <i class="fa fa-male" aria-hidden="true"></i> Male 
+                        <input type="radio" name="gender"> <i class="fa fa-female" aria-hidden="true"></i> Female
+                    </td>
+                    <td>
+                        <label for=""> Nationality </label>
+                    </td>
+                    <td>
+                       <input type="radio" name="nationality"> Indian &nbsp;
+                       <label for=""> if Others</label>
+                       <input type="text" name="" id="">
+                    </td>
+                    </tr>
+                <tr>
+                    <td>
+                        <label for="address1"> Address Line 1 :</label> 
+                        </td>
+                        <td>
+                        <input type="text" id="address1" size="30" placeholder="your address 1 here">
+                        
+                    </td>
+                    <td>
+                        <label for="address2"> Address Line 2 :</label> 
+                       </td>
+                       <td><input type="text" id="address2" size="30"placeholder="your address 2 here"> 
+                    </td>
+                </tr>
+            </table>
+         <br>
+         <table align="center" width="20%" height="50px" id="mytable"> 
+            <tr >
+                <td id="heading"> 
+                    Language Known :
+                </td>
+            </tr>
+        </table > <br>
+        <table align="center" class="table1" width="80%" >
+            <tr>
+                <td>
+                <label for="hindi"> Hindi</label>
+                <input type="checkbox" id="hindi"> 
+                </td>
+                <td>
+                <label for="English"> English </label>
+                <input type="checkbox" id="English"> 
+                </td>
+                <td>
+                <label for="Gujarati"> Gujarati</label>
+                <input type="checkbox" id="Gujarati"> 
+                </td>
+                <td>
+                <label for="French"> Others: </label>
+                <input type="text" id="French"> 
+                </td>
+            </tr>    
+        </table> <br>
+        <table align="center" width="20%" height="50px" id="mytable"> 
+            <tr >
+                <td id="heading"> 
+                    Hobbies :
+    
+                </td>
+            </tr>
+        </table > <br>
+        <table align="center" class="table1" width="80%" >
+            <tr>
+                <td>
+                <input type="checkbox" id="c"> 
+                <label for="C"> Cricket </label> &nbsp;
+                </td>
+                <td>
+                    <input type="checkbox" id="Coding"> 
+                <label for="Coding">Coding</label> &nbsp;
+                </td>
+                <td>
+                    <input type="checkbox" id="reading"> 
+                <label for="reading"> Reading</label> &nbsp;
+                </td>
+                <td>
+                    <input type="checkbox" id="Dancing"> 
+                <label for="Dancing"> Dancing</label> &nbsp;
+                </td>
+                <td>
+                    
+                    <label for="others"> Others :</label>
+                    <input type="text" id="others">
+                </td>
+            </tr>    
+        </table> <br>
+        <table align="center" width="20%" height="50px" id="mytable"> 
+            <tr >
+                <td id="heading"> 
+                   Work Experience:
+    
+                </td>
+            </tr>
+        </table > <br>
+        <table align="center" border="10" class="table1" width="80%" >
+            <tr>
+                <td>
+                <input type="text" name="" id="" placeholder="Job Title" size="50"> <br>
+                <input type="text" name="" id="" placeholder="Company Name" size="50"> <br>
+                <input type="text" name="" id="" placeholder="Years worked" size="50"> <br>
+               <textarea placeholder="Address" name="" id="" cols="42" rows="10"></textarea>
+                </td>
+                <td><input type="text" name="" id="" placeholder="Job Title" size="50"> <br>
+                    <input type="text" name="" id="" placeholder="Company Name" size="50"> <br>
+                    <input type="text" name="" id="" placeholder="Years worked" size="50"> <br>
+                    <textarea placeholder="Address" name="" id="" cols="42" rows="10"></textarea>
+            </tr>
+        </table> <br>
+                    <table align="center" width="20%" height="50px" id="mytable"> 
+                        <tr >
+                            <td id="heading"> 
+                                Education Details :
+                            </td>
+                        </tr>
+                    </table>                 
+         <table align="center" border="10" class="table1" width="80%" >
+                            <tr>
+                                <th> Sr. No</th>
+                                <th> Qualification</th>
+                                <th> Percentage</th>
+                                <th> Year of Passing</th>
+                                <th> Board</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <br>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td><br>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td><br>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+                    </table> <br>
+                    <table align="center" width="20%" height="50px" id="mytable"> 
+                        <tr >
+                            <td id="heading"> 
+                                Additional Qualification:
+                            </td>
+                        </tr>
+                    </table >
+                    <table align="center" width="80%">
+                        <tr>
+                            <td>
+                        <details>
+                            <summary> 1 </summary>
+                        <table class="table1" width="60%" >
+                            <tr>
+                                <td>
+                            <input type="text" value="" placeholder="Name of Course" size="30">
+                                </td>
+                                <td>
+                            <input type="text" value="" placeholder="Year of passing" size="30">
+                                </td>
+                                <td>
+                            <input type="text" value="" placeholder=" Percentage" size="30">
+                                </td>
+                            </tr>
+                            </table>
+                        </details>
+                        </td>
+                        </tr>
+                        </table>
+                            <table align="center" width="80%">
+                                <tr>
+                                    <td>
+                        <details>
+                            <summary> 2 </summary>
+                        <table  class="table1" width="60%" >
+                            <tr>
+                                <td>
+                            <input type="text" value="" placeholder="Name of Course" size="30">
+                                </td>
+                                <td>
+                            <input type="text" value="" placeholder="Year of passing" size="30">
+                                </td>
+                                <td>
+                            <input type="text" value="" placeholder=" Percentage" size="30">
+                                </td>
+                                </tr>
+                                </table>
+                                </details>
+                            </td>
+                        </tr>
+                        </table>
+                                <table align="center" width="80%">
+                                    <tr>
+                                        <td>
+                        <details>
+                            <summary> 3 </summary>
+                        <table class="table1" width="60%" >
+                            <tr>
+                                <td>
+                            <input type="text" value="" placeholder="Name of Course" size="30">
+                                </td>
+                                <td>
+                            <input type="text" value="" placeholder="Year of passing" size="30">
+                                </td>
+                                <td>
+                            <input type="text" value="" placeholder=" Percentage" size="30">
+                                </td>
+                                </tr>    
+                        </table>
+                        </details>
+                    </td>
+                </tr>
+                </table>            
+                     <br>    
+                <table align="center" width="20%" height="50px" id="mytable"> 
+                    <tr >
+                        <td id="heading"> 
+                            Reference :
+                        </td>
+                    </tr>
+                </table > <br>
+                <table align="center" border="10" class="table1" width="80%" >
+                    <tr>
+                        <td>
+                        <input type="text" name="" id="" placeholder="Manager Name" size="50"> <br>
+                        <input type="text" name="" id="" placeholder="Company Name and Address" size="50"> <br>
+                        <input type="text" name="" id="" placeholder="Mobile No" size="50"> <br>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="" placeholder="Manager Name" size="50"> <br>
+                            <input type="text" name="" id="" placeholder="Company Name and Address" size="50"> <br>
+                            <input type="text" name="" id="" placeholder="Mobile No" size="50"> <br>   
+                    </tr>
+                </table> <br>
+                <table align="center" width="20%" height="50px" id="mytable"> 
+                    <tr >
+                        <td id="heading"> 
+                            Attach Document :
+                        </td>
+                    </tr>
+               
+                </table > <br>
+                <table align="center" class="table1" width="80%">
+                    <tr>
+                        <td>
+                <label for="ssc" class="file_attach"> SSC Marksheet :</label> 
+                </td>
+                <td>
+                <input type="file" id="ssc">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                <label for="hsc" class="file_attach"> HSC Marksheet :</label> 
+                </td>
+                <td>
+                <input type="file" id="hsc">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                <label for="ssc" class="file_attach"> Diploma/Degree Marksheet:</label> 
+                </td>
+                <td>
+                <input type="file" id="ssc">
+                </td>
+                </tr>
+                </table> <br>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <table border="1" >
+                                <tr>
+                                    <td style="background-color:#80824D;">
+                                        <a href="thank.html">Submit</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <input style="background-color:#80824D;" type="reset" value="Clear">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+
+</body>
+
+</html>
